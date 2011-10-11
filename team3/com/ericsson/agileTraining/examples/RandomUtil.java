@@ -6,9 +6,11 @@ import java.util.Random;
 
 public class RandomUtil
 {
+    private static ArrayList<Shape> theShapeList = new ArrayList<Shape>(); 
+    
     public static void main(String...args)
     {
-        ArrayList<Shape> theShapeList = new ArrayList<Shape>();
+        
         
         Random randomGenerator = new Random();
         
@@ -22,9 +24,19 @@ public class RandomUtil
             theShapeList.add(theSQUARE);
             theShapeList.add(theCIRCLE);
             
-        }   
+        } 
+        getData();
         
 
+    }
+    
+    public static void getData()
+    {
+        for (Shape aShape : theShapeList)
+        {
+            aShape.printDimensions();
+            aShape.printArea();
+        }
     }
 
     
