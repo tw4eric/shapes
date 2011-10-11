@@ -11,7 +11,8 @@ public class RenderShape {
 		rectangle2.draw();
 		rectangle3.draw();
 		
-		//new Rectangle(-3, 25.6);
+		Shape circle = new Circle(12.0);
+		circle.draw();
 	}
 
 }

@@ -25,9 +25,12 @@ public class Rectangle implements Shape {
 	public void draw() {
 		System.out.println("The height of the rectangle: " + getHeight());
 		System.out.println("The width of the rectangle: " + getWidth());
-		System.out.println("The area of the rectangle: "
-				+ (getHeight() * getWidth()));
+		System.out.println("The area of the rectangle: " + getArea());
 		System.out.println("---------------------------------");
+	}
+	
+	public double getArea() {
+		return getHeight() * getWidth();
 	}
 
 }
