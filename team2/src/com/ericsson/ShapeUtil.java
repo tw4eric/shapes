@@ -22,6 +22,14 @@ public class ShapeUtil{
             
             radius ++;
         }
+        
+        int length = 6;
+        for(int i=0; i<5; i++){
+            Shape s  = ShapeFactory.createSquare(length);
+            s.draw();
+            
+            length++;
+        }
     }
 }
 

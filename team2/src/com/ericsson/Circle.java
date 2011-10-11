@@ -15,6 +15,7 @@ public class Circle implements Shape
         System.out.println("Circle dimesions drawn");
         System.out.println("Circle radius: " + radius);
         System.out.println("Area: " + ( 3.14 * (radius ^ 2)));
+        System.out.println();
     }
 
 }
