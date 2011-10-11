@@ -1,6 +1,6 @@
 package shape;
 
-public class Rectangle {
+public class Rectangle implements Shape{
 
 	private double height;
 	private double width;
@@ -10,16 +10,9 @@ public class Rectangle {
 		this.height = height;
 	}
 
-	/*
-	 * public void setDimension(double width,double height){ this.width=width;
-	 * this.height=height;
-	 * 
-	 * }
-	 */
-
+	@Override
 	public void draw() {
-		System.out.println("Dimension - " + width + "*" + height);
-		System.out.println("Area - " + width * height);
+		System.out.println("Rectangle draw : " + width * height);
 
 	}
 }
