@@ -17,14 +17,15 @@ public class Square implements Shape
     @Override
     public void printDimensions()
     {
-        // TODO Auto-generated method stub
-        
+        System.out.println("\n");
+        System.out.println("Dimensions of the Rectangle");
+        System.out.println("Side = " + mySide);        
     }
 
     @Override
     public void printArea()
     {
-        // TODO Auto-generated method stub
+        System.out.println("Area = " + (mySide * mySide) + " sq units");
         
     }
 
