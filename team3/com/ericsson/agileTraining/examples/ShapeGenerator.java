@@ -11,11 +11,16 @@ public class ShapeGenerator
         theR1.printDimensions();
         theR1.printArea();
         
-        System.out.println("\n");
         Circle theCircle1 = new Circle();
         theCircle1.setRadius(5);
         theCircle1.printDimensions();
         theCircle1.printArea();
+        
+        Square theSquare = new Square();
+        theSquare.setSide(8f);
+        theSquare.printDimensions();
+        theSquare.printArea();
+     
     }
 }
 
