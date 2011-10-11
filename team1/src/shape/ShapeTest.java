@@ -10,6 +10,9 @@ public class ShapeTest {
 
 		Shape c1 = new Circle(10);
 		c1.draw();
+		
+		Shape sq1 = new Square(15);
+		sq1.draw();
 
 		// for (int i = 0; i < 5; i++) {
 		// double height = Math.random();

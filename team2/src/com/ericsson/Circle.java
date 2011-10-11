@@ -3,9 +3,9 @@ package com.ericsson;
 public class Circle implements Shape
 {
 
-    private int radius;
+    private float radius;
     
-    public Circle(int radius){
+    public Circle(float radius){
         this.radius = radius;
     }
     
@@ -14,7 +14,7 @@ public class Circle implements Shape
     {
         System.out.println("Circle dimesions drawn");
         System.out.println("Circle radius: " + radius);
-        System.out.println("Area: " + ( 3.14 * (radius ^ 2)));
+        System.out.println("Area: " + ( 3.14f * (radius * radius)));
         System.out.println();
     }
 
