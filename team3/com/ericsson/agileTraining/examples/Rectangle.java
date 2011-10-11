@@ -2,9 +2,15 @@ package com.ericsson.agileTraining.examples;
 
 public class Rectangle implements Shape
 {
-        private float myLength;
+    private float myLength;
     
     private float myBreadth;
+    
+    public Rectangle(float length, float breadth)
+    {
+        myLength = length;
+        myBreadth = breadth;
+    }
     
     public float getLength()
     {

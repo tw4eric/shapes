@@ -4,6 +4,12 @@ public class Circle implements Shape
 {
     private float myRadius;
     
+    public Circle(float radius)
+    {
+        myRadius = radius;
+    }
+    
+    
     public void setRadius(float aRadius)
     {
         myRadius = aRadius;

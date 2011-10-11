@@ -4,6 +4,11 @@ public class Square implements Shape
 {
     private float mySide;
     
+    public Square(float side)
+    {
+        mySide = side;
+    }
+    
     public void setSide(float aSide)
     {
         mySide = aSide;
