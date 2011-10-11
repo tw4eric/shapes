@@ -6,7 +6,7 @@ public class ShapeFactory
         return new Rectangle(width, height);
     }
     
-    public static Shape createCircle(int radius){
+    public static Shape createCircle(float radius){
         return new Circle(radius);
     }
     
