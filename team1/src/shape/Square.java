@@ -2,9 +2,9 @@ package shape;
 
 public class Square implements Shape {
 
-	private int side;
+	private double side;
 
-	public Square(int side) {
+	public Square(double side) {
 		this.side = side;
 	}
 
