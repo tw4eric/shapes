@@ -1,10 +1,14 @@
 package com.ericsson.agileTraining.examples;
 
+import java.util.ArrayList;
+
 public class ShapeGenerator
 {
 
     public static void main(String[] args)
     {
+ 
+        
         Rectangle theR1 = new Rectangle();
         theR1.setLength(10.5f);
         theR1.setBreadth(5.8f);
@@ -20,7 +24,8 @@ public class ShapeGenerator
         theSquare.setSide(8f);
         theSquare.printDimensions();
         theSquare.printArea();
-     
+  
+        
     }
 }
 
