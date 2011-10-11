@@ -13,6 +13,9 @@ public class RenderShape {
 		
 		Shape circle = new Circle(12.0);
 		circle.draw();
+		
+		Shape square = new Square(12.0);
+		square.draw();
 	}
 
 }
