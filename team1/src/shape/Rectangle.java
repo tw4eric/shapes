@@ -18,4 +18,10 @@ public class Rectangle implements Shape{
 		return height*width;
 
 	}
+
+	@Override
+	public void render(BitMap bitmap) {
+	bitmap.render("area "+computeArea());
+		
+	}
 }

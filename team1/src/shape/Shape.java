@@ -1,7 +1,9 @@
 package shape;
 
-public interface Shape {
+public interface Shape 
+{
 
 	double computeArea();
+	void render(BitMap bitmap);
 	
 }
