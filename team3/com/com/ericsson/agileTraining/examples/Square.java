@@ -1,37 +1,18 @@
 package com.ericsson.agileTraining.examples;
 
-public class Square implements Shape
+public class Square extends Rectangle
 {
-    private float mySide;
     
-    public Square(float side)
+    public Square(double side)
     {
-        mySide = side;
-    }
-    
-    public void setSide(float aSide)
-    {
-        mySide = aSide;
-    }
-    
-    public float getSide()
-    {
-        return mySide;
+    	super(side, side);
     }
     
     @Override
     public void render(Bitmap bitmap)
     {
-        System.out.println("\n");
-        System.out.println("Dimensions of the Rectangle");
-        System.out.println("Side = " + mySide);        
-    }
-
-    @Override
-    public double computeArea()
-    {
-        return (mySide * mySide);
-        
+    	bitmap.renderDimension("Dimension: side is "+ getLength());
+		bitmap.renderArea("Area: " + computeArea());   
     }
 
 }
