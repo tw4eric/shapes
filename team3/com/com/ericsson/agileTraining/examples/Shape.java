@@ -2,7 +2,6 @@ package com.ericsson.agileTraining.examples;
 
 public interface Shape
 {
-    public void printDimensions();
-
-    public void printArea();
+    public void render();
+    public double computeArea();
 }
