@@ -31,6 +31,6 @@ public class RectangleTest{
 	public void shouldComputeAreaCorrectly()
 	{
         Rectangle rec = new Rectangle(10,20);
-        assertEquals((rec.getHeight() * rec.getWidth()),rec.getArea(),0.00);
+        assertEquals((rec.height * rec.width),rec.getArea(),0.00);
 	}
 }
