@@ -14,11 +14,11 @@ public class Rectangle implements Shape {
 		this.height = height;
 	}
 
-	public void draw() {
-		System.out.println("The height of the "+this.getClass().getSimpleName()+": " + height);
-		System.out.println("The width of the "+this.getClass().getSimpleName()+": " + width);
-		System.out.println("The area of the "+this.getClass().getSimpleName()+": " + getArea());
-		System.out.println("---------------------------------");
+	public void draw(Bitmap bitmap) {
+	    bitmap.draw("The height of the "+this.getClass().getSimpleName()+": " + height);
+	    bitmap.draw("The width of the "+this.getClass().getSimpleName()+": " + width);
+	    bitmap.draw("The area of the "+this.getClass().getSimpleName()+": " + getArea());
+	    bitmap.draw("---------------------------------");
 	}
 	
 	public double getArea() {

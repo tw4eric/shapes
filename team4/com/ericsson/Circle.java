@@ -17,9 +17,10 @@ public class Circle implements Shape {
 	}
 	
 	@Override
-	public void draw() {
-		System.out.println("Radius of the circle: "+ getRadius());
-		System.out.println("Area of the circle: " + getArea());
+	public void draw(Bitmap bitmap) {
+	    
+		bitmap.draw("Radius of the circle: "+ getRadius());
+		bitmap.draw("Area of the circle: " + getArea());
 		
 	}
 

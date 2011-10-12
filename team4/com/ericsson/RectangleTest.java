@@ -3,6 +3,8 @@ package com.ericsson;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import org.mockito.Mock;
+import org.mockito.Mockito;
 
 public class RectangleTest{
 
@@ -23,8 +25,11 @@ public class RectangleTest{
 	@Test
 	public void shouldBeAbleToDraw()
 	{
+	       Bitmap mock = Mockito.mock(Bitmap.class);
 	       Rectangle rec = new Rectangle(10,20);
-	       rec.draw();
+	       rec.draw(mock);
+	       
+	       Mockito.verify(mock).draw("The height of the Rectangle: 10.0");
 	}
     
 	@Test	
