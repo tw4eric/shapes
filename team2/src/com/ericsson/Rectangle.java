@@ -20,8 +20,9 @@ public class Rectangle implements Shape
     @Override
     public void render(Bitmap bitmap)
     {
-        
-        
+        bitmap.renderDimensionsAsText("Rectangle Dimensions Are : ("+height+","+width+")");
+       bitmap.renderAreaAsText("Rectangle Area is :"+computeArea());
+       
     }
 
 
