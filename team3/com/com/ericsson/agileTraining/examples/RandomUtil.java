@@ -10,10 +10,7 @@ public class RandomUtil
     
     public static void main(String...args)
     {
-        
-        
         Random randomGenerator = new Random();
-        
         for (int idx = 1; idx <= 5; ++idx)
         {
             int randomInt = randomGenerator.nextInt(10);
