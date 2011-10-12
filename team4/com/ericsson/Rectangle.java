@@ -14,12 +14,12 @@ public class Rectangle implements Shape {
 	}
 
 	public Rectangle(double height, double width) {
-		if (height <= 0 || width <= 0) {
-			throw new RuntimeException(
-					"Height and width of a "+this.getClass().getSimpleName()+" should be greater than zero.");
-		}
-		this.height = height;
+	    if (height <= 0 || width <= 0)
+	    {
+	        throw new IllegalArgumentException("Invalid arguments");
+	    }
 		this.width = width;
+		this.height = height;
 	}
 
 	public void draw() {
