@@ -20,7 +20,7 @@ public class Square implements Shape
     }
     
     @Override
-    public void printDimensions()
+    public void render()
     {
         System.out.println("\n");
         System.out.println("Dimensions of the Rectangle");
@@ -28,9 +28,9 @@ public class Square implements Shape
     }
 
     @Override
-    public void printArea()
+    public double computeArea()
     {
-        System.out.println("Area = " + (mySide * mySide) + " sq units");
+        return (mySide * mySide);
         
     }
 

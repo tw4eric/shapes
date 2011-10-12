@@ -20,7 +20,7 @@ public class Circle implements Shape
         return myRadius;
     }
     
-    public void printDimensions()
+    public void render()
     {
         System.out.println("\n");
         System.out.println("Dimensions of the Circle");
@@ -28,8 +28,8 @@ public class Circle implements Shape
         
     }
     
-    public void printArea()
+    public double computeArea()
     {
-        System.out.println("Area = " + (3.14 * myRadius * myRadius) + " sq units");
+        return (3.14 * myRadius * myRadius);
     }
 }
