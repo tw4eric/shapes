@@ -3,6 +3,7 @@ package com.ericsson.agileTraining.examples;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import static org.mockito.Mockito.*;
 
 import junit.framework.TestCase;
 
@@ -20,13 +21,23 @@ import junit.framework.TestCase;
  */
 public class RectangleTest{
 
-	@SuppressWarnings("deprecation")
 	@Test
 	public void shouldComputeArea()
 	{
 		Rectangle theRectangle = new Rectangle(10,15);
 		assertEquals(150.0, theRectangle.computeArea(),0.000001);
 	}
+	
+	@Test
+	public void shouldRenderDimensionOnBitMap()
+	{
+		Rectangle theRectangle = new Rectangle(10,15);
+		Bitmap mockedBitmap = mock(Bitmap.class);
+		theRectangle.render(mockedBitmap);
+		verify(mockedBitmap).renderDimension("Dimension: length is 10.0, breadth is 15.0");
+		
+	}
+	
 	
 }
 

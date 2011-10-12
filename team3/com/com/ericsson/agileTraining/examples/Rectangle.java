@@ -13,8 +13,8 @@ public class Rectangle implements Shape
     }
 
 	@Override
-	public void render() {
-		
+	public void render(Bitmap bitmap) {
+		bitmap.renderDimension("Dimension: length is "+myLength+", breadth is " + myBreadth);
 	}
 
 	@Override
