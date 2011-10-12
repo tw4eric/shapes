@@ -20,7 +20,7 @@ public class Square implements Shape
     }
     
     @Override
-    public void render()
+    public void render(Bitmap bitmap)
     {
         System.out.println("\n");
         System.out.println("Dimensions of the Rectangle");
