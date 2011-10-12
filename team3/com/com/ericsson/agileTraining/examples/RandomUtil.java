@@ -34,7 +34,7 @@ public class RandomUtil
     {
         for (Shape aShape : theShapeList)
         {
-            aShape.render();
+            aShape.render(null);
             aShape.computeArea();
         }
     }

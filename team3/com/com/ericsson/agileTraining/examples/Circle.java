@@ -20,7 +20,7 @@ public class Circle implements Shape
         return myRadius;
     }
     
-    public void render()
+    public void render(Bitmap bitmap)
     {
         System.out.println("\n");
         System.out.println("Dimensions of the Circle");
