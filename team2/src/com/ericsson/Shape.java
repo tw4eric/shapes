@@ -2,5 +2,6 @@ package com.ericsson;
 
 public interface Shape
 {
-    public void draw();
+    public double computeArea();
+    public void render(Bitmap bitmap);
 }

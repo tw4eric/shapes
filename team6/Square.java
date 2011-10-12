@@ -1,10 +1,9 @@
 class Square
 {
-	static void genSquare()
+	static double genSquare()
 	{
 	double side= 1+Math.random()*10;
-	System.out.println("side  "+side);
-	System.out.println("area  "+ side*side);
+	return side*side;
 	}
 
 		
